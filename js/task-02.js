@@ -6,19 +6,14 @@
 // После чего вставит все <li> за одну операцию в список ul#ingredients.
 
 const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments"]
+const listRef = document.querySelector("#ingredients")
 
-const ingredientsFunc = (ingredients) => {
-    return ingredients.map((item) => {
-        const makeEl = document.createElement("li")
-        const listEl = document.querySelector("#ingredients")
+const listIngredientsRef = ingredients.map((item) => {
+    const makeEl = document.createElement("li")
+    makeEl.textContent = item
+    makeEl.classList = "item"
 
-        makeEl.textContent = item
-        makeEl.classList = "item"
+    return makeEl
+})
 
-        console.log(makeEl)
-
-        return listEl.appendChild(makeEl)
-    })
-}
-
-ingredientsFunc(ingredients)
+listRef.append(...listIngredientsRef)
