@@ -30,7 +30,7 @@ const images = [
 const galleryRef = document.querySelector(".gallery")
 
 const getItem = images.map(({ url, alt, width, height }) => {
-    return `<li><img width="${width}" height="${height}" src="${url}" alt="${alt}"></li>`
+    return /*html*/ `<li><img width="${width}" height="${height}" src="${url}" alt="${alt}"></li>`
 })
 
 galleryRef.insertAdjacentHTML("afterbegin", getItem.join(""))

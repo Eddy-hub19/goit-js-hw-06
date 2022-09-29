@@ -51,18 +51,18 @@
 
 // --------------------------------version 3-------------------------------- //
 
-const listEl = document.querySelector("#categories")
-const itemEl = document.querySelectorAll(".item")
-const categoriesQuantity = itemEl.length
+// const listEl = document.querySelector("#categories")
+// const itemEl = document.querySelectorAll(".item")
+// const categoriesQuantity = itemEl.length
 
-console.log("Number of categories:", categoriesQuantity)
+// console.log("Number of categories:", categoriesQuantity)
 
-const categoriesTotal = () => {
-    itemEl.forEach((el) => {
-        const getItems = el.firstElementChild.textContent
-        const getEl = el.lastElementChild.childElementCount
-        console.log(`Category: ${getItems},\nElement: ${getEl}`)
-    })
-}
+// const categoriesTotal = () => {
+//     itemEl.forEach((el) => {
+//         const getItems = el.firstElementChild.textContent
+//         const getEl = el.lastElementChild.childElementCount
+//         console.log(`Category: ${getItems},\nElement: ${getEl}`)
+//     })
+// }
 
-categoriesTotal(itemEl)
+// categoriesTotal(itemEl)
